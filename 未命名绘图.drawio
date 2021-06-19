@@ -1,1 +1,191 @@
-<mxfile host="app.diagrams.net" modified="2021-06-18T08:43:17.395Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.106 Safari/537.36" version="14.7.10" etag="M5wLiVqDbd-hJqW0hbKJ" type="github"><diagram id="IBMqZ-MF1CHaQvlL7ghQ">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-06-19T05:06:15.158Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.106 Safari/537.36" etag="SOGtgP9nJNSxc-zPObPi" version="14.7.10" type="github" pages="2">
+  <diagram id="IBMqZ-MF1CHaQvlL7ghQ" name="redis基础">
+    <mxGraphModel dx="1322" dy="614" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="qG7SVVT7gRLVUeebt_x4-2" value="&lt;font style=&quot;font-size: 18px&quot;&gt;内存&lt;/font&gt;" style="pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#21C0A5;aspect=fixed;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;outlineConnect=0;shape=mxgraph.vvd.memory;fontColor=#5C5C5C;" vertex="1" parent="1">
+          <mxGeometry x="64" y="77" width="131.58" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="qG7SVVT7gRLVUeebt_x4-7" value="&lt;font style=&quot;font-size: 18px&quot;&gt;磁盘&lt;/font&gt;" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=#006658;fillColor=#21C0A5;shape=mxgraph.azure.vhd_data_disk;pointerEvents=1;rotation=0;fontColor=#5C5C5C;" vertex="1" parent="1">
+          <mxGeometry x="404" y="62" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="qG7SVVT7gRLVUeebt_x4-9" value="&lt;font style=&quot;font-size: 18px&quot;&gt;持久化&lt;/font&gt;" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0.6;dx=40;notch=0;strokeColor=#006658;fillColor=#21C0A5;fontColor=#5C5C5C;" vertex="1" parent="1">
+          <mxGeometry x="215.58" y="42" width="170" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="qG7SVVT7gRLVUeebt_x4-11" value="&lt;font style=&quot;font-size: 18px&quot;&gt;恢复数据&lt;/font&gt;" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0.6;dx=40;flipH=1;notch=0;strokeColor=#006658;fillColor=#21C0A5;fontColor=#5C5C5C;" vertex="1" parent="1">
+          <mxGeometry x="214" y="102" width="171.58" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="qG7SVVT7gRLVUeebt_x4-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#006658;fontColor=#5C5C5C;" edge="1" parent="1" source="qG7SVVT7gRLVUeebt_x4-22" target="qG7SVVT7gRLVUeebt_x4-25">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="272" y="317" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qG7SVVT7gRLVUeebt_x4-27" value="创建" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#5C5C5C;" vertex="1" connectable="0" parent="qG7SVVT7gRLVUeebt_x4-23">
+          <mxGeometry x="-0.1006" y="4" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qG7SVVT7gRLVUeebt_x4-22" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;imageAspect=0;aspect=fixed;image=https://cdn4.iconfinder.com/data/icons/redis-2/467/Redis_Logo-128.png;strokeColor=#006658;fillColor=#21C0A5;fontColor=#5C5C5C;" vertex="1" parent="1">
+          <mxGeometry x="72.79" y="260" width="114" height="114" as="geometry" />
+        </mxCell>
+        <mxCell id="qG7SVVT7gRLVUeebt_x4-25" value="RDB文件（二进制）" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#006658;fillColor=#21C0A5;fontColor=#5C5C5C;" vertex="1" parent="1">
+          <mxGeometry x="350" y="287" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qG7SVVT7gRLVUeebt_x4-31" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;imageAspect=0;aspect=fixed;image=https://cdn4.iconfinder.com/data/icons/redis-2/467/Redis_Logo-128.png;strokeColor=#006658;fillColor=#21C0A5;fontColor=#5C5C5C;" vertex="1" parent="1">
+          <mxGeometry x="69" y="386" width="114" height="114" as="geometry" />
+        </mxCell>
+        <mxCell id="qG7SVVT7gRLVUeebt_x4-33" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;fontColor=#5C5C5C;strokeColor=#006658;fillColor=#21C0A5;" edge="1" parent="1" source="qG7SVVT7gRLVUeebt_x4-32" target="qG7SVVT7gRLVUeebt_x4-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qG7SVVT7gRLVUeebt_x4-34" value="启动载入" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#5C5C5C;" vertex="1" connectable="0" parent="qG7SVVT7gRLVUeebt_x4-33">
+          <mxGeometry x="-0.1979" y="-3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qG7SVVT7gRLVUeebt_x4-32" value="RDB文件（二进制）" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#006658;fillColor=#21C0A5;fontColor=#5C5C5C;" vertex="1" parent="1">
+          <mxGeometry x="350" y="413" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qG7SVVT7gRLVUeebt_x4-35" value="&lt;font style=&quot;font-size: 18px&quot;&gt;内存&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;sketch=0;fontColor=#5C5C5C;strokeColor=#006658;fillColor=#FFFF66;" vertex="1" parent="1">
+          <mxGeometry x="118" y="332" width="65" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="qG7SVVT7gRLVUeebt_x4-36" value="&lt;font style=&quot;font-size: 18px&quot;&gt;内存&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;sketch=0;fontColor=#5C5C5C;strokeColor=#006658;fillColor=#FFFF66;" vertex="1" parent="1">
+          <mxGeometry x="121.79" y="459" width="65" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="qG7SVVT7gRLVUeebt_x4-37" value="&lt;font style=&quot;font-size: 18px&quot;&gt;硬盘&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;sketch=0;fontColor=#5C5C5C;strokeColor=#006658;fillColor=#FFFF66;" vertex="1" parent="1">
+          <mxGeometry x="377.5" y="332" width="65" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="qG7SVVT7gRLVUeebt_x4-38" value="&lt;font style=&quot;font-size: 18px&quot;&gt;硬盘&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;sketch=0;fontColor=#5C5C5C;strokeColor=#006658;fillColor=#FFFF66;" vertex="1" parent="1">
+          <mxGeometry x="377.5" y="459" width="65" height="34" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="3_OE9AZ8NSmhKbrOX8_j" name="redis-rdb">
+    <mxGraphModel dx="1322" dy="1441" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="ceOFL5pclL6VPB8mqtDc-0" />
+        <mxCell id="ceOFL5pclL6VPB8mqtDc-1" parent="ceOFL5pclL6VPB8mqtDc-0" />
+        <mxCell id="QP3spTyISNoaK3f5Oq73-0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#006658;fontColor=#5C5C5C;" edge="1" parent="ceOFL5pclL6VPB8mqtDc-1" target="QP3spTyISNoaK3f5Oq73-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="399.21000000000004" y="-700" as="targetPoint" />
+            <mxPoint x="337" y="-700" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QP3spTyISNoaK3f5Oq73-1" value="创建" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#5C5C5C;" vertex="1" connectable="0" parent="QP3spTyISNoaK3f5Oq73-0">
+          <mxGeometry x="-0.1006" y="4" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QP3spTyISNoaK3f5Oq73-2" value="RDB文件（二进制）" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#006658;fillColor=#21C0A5;fontColor=#5C5C5C;" vertex="1" parent="ceOFL5pclL6VPB8mqtDc-1">
+          <mxGeometry x="477.21000000000004" y="-730" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QP3spTyISNoaK3f5Oq73-3" value="&lt;font style=&quot;font-size: 18px&quot;&gt;内存&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;sketch=0;fontColor=#5C5C5C;strokeColor=#006658;fillColor=#FFFF66;" vertex="1" parent="ceOFL5pclL6VPB8mqtDc-1">
+          <mxGeometry x="267" y="-685" width="65" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="QP3spTyISNoaK3f5Oq73-4" value="&lt;font style=&quot;font-size: 18px&quot;&gt;硬盘&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;sketch=0;fontColor=#5C5C5C;strokeColor=#006658;fillColor=#FFFF66;" vertex="1" parent="ceOFL5pclL6VPB8mqtDc-1">
+          <mxGeometry x="504.71000000000004" y="-685" width="65" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="QP3spTyISNoaK3f5Oq73-5" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;fontColor=#5C5C5C;strokeColor=#006658;fillColor=#21C0A5;" edge="1" parent="ceOFL5pclL6VPB8mqtDc-1" source="QP3spTyISNoaK3f5Oq73-7">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="223" y="-700" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QP3spTyISNoaK3f5Oq73-6" value="2.get key" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#5C5C5C;" vertex="1" connectable="0" parent="QP3spTyISNoaK3f5Oq73-5">
+          <mxGeometry x="-0.3211" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QP3spTyISNoaK3f5Oq73-7" value="客户端" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;rounded=0;sketch=0;fontColor=#5C5C5C;strokeColor=#006658;fillColor=#FFFF66;" vertex="1" parent="ceOFL5pclL6VPB8mqtDc-1">
+          <mxGeometry x="40" y="-720" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QP3spTyISNoaK3f5Oq73-8" value="" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#5C5C5C;strokeColor=#006658;fillColor=#21C0A5;" edge="1" parent="ceOFL5pclL6VPB8mqtDc-1" source="QP3spTyISNoaK3f5Oq73-10" target="QP3spTyISNoaK3f5Oq73-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QP3spTyISNoaK3f5Oq73-9" value="1.save" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#5C5C5C;" vertex="1" connectable="0" parent="QP3spTyISNoaK3f5Oq73-8">
+          <mxGeometry x="0.2665" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QP3spTyISNoaK3f5Oq73-10" value="运维" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;rounded=0;sketch=0;fontColor=#5C5C5C;strokeColor=#006658;fillColor=#FFCE9F;" vertex="1" parent="ceOFL5pclL6VPB8mqtDc-1">
+          <mxGeometry x="208" y="-598" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QP3spTyISNoaK3f5Oq73-11" value="&lt;span style=&quot;font-size: 18px&quot;&gt;阻塞&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;sketch=0;fontColor=#5C5C5C;strokeColor=#006658;fillColor=#FFFF66;" vertex="1" parent="ceOFL5pclL6VPB8mqtDc-1">
+          <mxGeometry x="86" y="-687" width="65" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="QP3spTyISNoaK3f5Oq73-12" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;imageAspect=0;aspect=fixed;image=https://cdn4.iconfinder.com/data/icons/redis-2/467/Redis_Logo-128.png;strokeColor=#006658;fillColor=#21C0A5;fontColor=#5C5C5C;" vertex="1" parent="ceOFL5pclL6VPB8mqtDc-1">
+          <mxGeometry x="205" y="-392" width="114" height="114" as="geometry" />
+        </mxCell>
+        <mxCell id="QP3spTyISNoaK3f5Oq73-13" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;fontColor=#5C5C5C;strokeColor=#006658;fillColor=#21C0A5;" edge="1" parent="ceOFL5pclL6VPB8mqtDc-1" source="QP3spTyISNoaK3f5Oq73-15" target="QP3spTyISNoaK3f5Oq73-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QP3spTyISNoaK3f5Oq73-14" value="&lt;font style=&quot;font-size: 14px&quot;&gt;1.bgsave&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#5C5C5C;" vertex="1" connectable="0" parent="QP3spTyISNoaK3f5Oq73-13">
+          <mxGeometry x="-0.3211" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QP3spTyISNoaK3f5Oq73-15" value="运维" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;rounded=0;sketch=0;fontColor=#5C5C5C;strokeColor=#006658;fillColor=#FFFF66;" vertex="1" parent="ceOFL5pclL6VPB8mqtDc-1">
+          <mxGeometry x="22" y="-355" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QP3spTyISNoaK3f5Oq73-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#006658;fontColor=#5C5C5C;" edge="1" parent="ceOFL5pclL6VPB8mqtDc-1" target="QP3spTyISNoaK3f5Oq73-18">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="374.21000000000004" y="-177" as="targetPoint" />
+            <mxPoint x="312" y="-177" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QP3spTyISNoaK3f5Oq73-17" value="&lt;font style=&quot;font-size: 14px&quot;&gt;4.创建RDB&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#5C5C5C;" vertex="1" connectable="0" parent="QP3spTyISNoaK3f5Oq73-16">
+          <mxGeometry x="-0.1006" y="4" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QP3spTyISNoaK3f5Oq73-18" value="RDB文件（二进制）" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#006658;fillColor=#21C0A5;fontColor=#5C5C5C;" vertex="1" parent="ceOFL5pclL6VPB8mqtDc-1">
+          <mxGeometry x="452.21000000000004" y="-207" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QP3spTyISNoaK3f5Oq73-19" value="&lt;font style=&quot;font-size: 18px&quot;&gt;内存&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;sketch=0;fontColor=#5C5C5C;strokeColor=#006658;fillColor=#FFFF66;" vertex="1" parent="ceOFL5pclL6VPB8mqtDc-1">
+          <mxGeometry x="242" y="-162" width="65" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="QP3spTyISNoaK3f5Oq73-20" value="&lt;font style=&quot;font-size: 18px&quot;&gt;硬盘&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;sketch=0;fontColor=#5C5C5C;strokeColor=#006658;fillColor=#FFFF66;" vertex="1" parent="ceOFL5pclL6VPB8mqtDc-1">
+          <mxGeometry x="479.71000000000004" y="-162" width="65" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="QP3spTyISNoaK3f5Oq73-21" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;imageAspect=0;aspect=fixed;image=https://cdn4.iconfinder.com/data/icons/redis-2/467/Redis_Logo-128.png;strokeColor=#006658;fillColor=#21C0A5;fontColor=#5C5C5C;" vertex="1" parent="ceOFL5pclL6VPB8mqtDc-1">
+          <mxGeometry x="205" y="-234" width="114" height="114" as="geometry" />
+        </mxCell>
+        <mxCell id="QP3spTyISNoaK3f5Oq73-22" value="" style="shape=flexArrow;endArrow=classic;html=1;fontColor=#5C5C5C;strokeColor=#006658;fillColor=#21C0A5;" edge="1" parent="ceOFL5pclL6VPB8mqtDc-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="215" y="-225" as="sourcePoint" />
+            <mxPoint x="215" y="-303" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QP3spTyISNoaK3f5Oq73-23" value="" style="shape=flexArrow;endArrow=classic;html=1;fontColor=#5C5C5C;strokeColor=#006658;fillColor=#21C0A5;" edge="1" parent="ceOFL5pclL6VPB8mqtDc-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="244" y="-302" as="sourcePoint" />
+            <mxPoint x="244" y="-214" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QP3spTyISNoaK3f5Oq73-24" value="&lt;font style=&quot;font-size: 14px&quot;&gt;2.fork()&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=0;fontColor=#5C5C5C;" vertex="1" parent="ceOFL5pclL6VPB8mqtDc-1">
+          <mxGeometry x="142" y="-279" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="QP3spTyISNoaK3f5Oq73-25" value="&lt;font style=&quot;font-size: 18px&quot;&gt;fast&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;sketch=0;fontColor=#5C5C5C;strokeColor=#006658;fillColor=#FFFF66;" vertex="1" parent="ceOFL5pclL6VPB8mqtDc-1">
+          <mxGeometry x="129.5" y="-259" width="65" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="QP3spTyISNoaK3f5Oq73-26" style="edgeStyle=none;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontColor=#5C5C5C;strokeColor=#006658;fillColor=#21C0A5;" edge="1" parent="ceOFL5pclL6VPB8mqtDc-1" source="QP3spTyISNoaK3f5Oq73-28" target="QP3spTyISNoaK3f5Oq73-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QP3spTyISNoaK3f5Oq73-27" value="&lt;font style=&quot;font-size: 14px&quot;&gt;3.不会阻塞&lt;br&gt;get命令&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#5C5C5C;" vertex="1" connectable="0" parent="QP3spTyISNoaK3f5Oq73-26">
+          <mxGeometry x="0.0303" y="1" relative="1" as="geometry">
+            <mxPoint x="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QP3spTyISNoaK3f5Oq73-28" value="客户端" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;rounded=0;sketch=0;fontColor=#5C5C5C;strokeColor=#006658;fillColor=#FFFF66;" vertex="1" parent="ceOFL5pclL6VPB8mqtDc-1">
+          <mxGeometry x="452.21000000000004" y="-440" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QP3spTyISNoaK3f5Oq73-29" value="&lt;font style=&quot;font-size: 14px&quot;&gt;5.bgsave successful&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=0;fontColor=#5C5C5C;" vertex="1" parent="ceOFL5pclL6VPB8mqtDc-1">
+          <mxGeometry x="237" y="-275" width="174" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="YHUICugy43QlZLCDXg5M-0" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;imageAspect=0;aspect=fixed;image=https://cdn4.iconfinder.com/data/icons/redis-2/467/Redis_Logo-128.png;strokeColor=#006658;fillColor=#21C0A5;fontColor=#5C5C5C;" vertex="1" parent="ceOFL5pclL6VPB8mqtDc-1">
+          <mxGeometry x="228.5" y="-757" width="114" height="114" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
